@@ -66,6 +66,9 @@
   .cards {
     grid-template-columns: repeat(3, 1fr);
   }
+  .ultimo {
+    display: none;
+  }
 }
 
 @media (max-width: 1140px) {
@@ -81,6 +84,9 @@
   .cards {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+  }
+  .penultimo {
+    display: none;
   }
 }
 
@@ -99,10 +105,16 @@
   .cards {
     grid-template-columns: repeat(3, 1fr);
   }
+  .penultimo {
+    display: initial;
+  }
 }
 
 @media (max-width: 700px) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .penultimo {
+    display: none;
   }
 }

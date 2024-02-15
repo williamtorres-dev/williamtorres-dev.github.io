@@ -111,6 +111,24 @@
   left: -30px;
 }
 
+.descricao a {
+  color: var(--base1);
+  font-size: 1.125rem;
+  line-height: 1.25;
+  margin-bottom: 10px;
+  font-weight: bold;
+  display: flex;
+  gap: 10px;
+}
+
+.descricao a:hover {
+  color: var(--secundaria);
+}
+
+.descricao a:hover .link path {
+  fill: var(--secundaria);
+}
+
 .descricao p {
   line-height: 1.25;
   color: var(--base2);
