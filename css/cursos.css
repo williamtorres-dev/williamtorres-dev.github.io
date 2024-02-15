@@ -17,8 +17,8 @@
   line-height: 1;
   text-transform: uppercase;
   word-break: break-all;
-  max-width: 4ch;
-  min-width: 3ch;
+  max-width: 4.4ch;
+  min-width: 3.6ch;
 }
 
 .cards {
