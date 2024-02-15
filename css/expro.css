@@ -33,22 +33,22 @@
   color: #bfbfbf;
 }
 
-.experiencias_texto p:not(:last-child) {
-  padding-bottom: 1.875rem;
+.experiencias_texto p + p {
+  padding-top: 1.875rem;
 }
 
 .experiencias_texto strong {
   color: #e6e6e6;
 }
 
-.experiencias a {
+.experiencias_texto a {
   color: #30bfbf;
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 1.875rem;
 }
 
-.experiencias a:hover {
+.experiencias_texto a:hover {
   color: #e6e6e6;
 }
 
@@ -90,6 +90,13 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.3);
 }
 
+.projeto h3 {
+  color: #e6e6e6;
+  font-size: 1.125rem;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
 .ano {
   position: absolute;
   background: linear-gradient(#3dcccc, #24b2b2);
@@ -102,13 +109,6 @@
   rotate: 270deg;
   top: 35px;
   left: -30px;
-}
-
-.projeto h3 {
-  color: #e6e6e6;
-  font-size: 1.125rem;
-  line-height: 1.25;
-  margin-bottom: 10px;
 }
 
 .descricao p {
@@ -138,7 +138,7 @@
 }
 
 @media (max-width: 1140px) {
-  .expro h2 {
+  .container_expro h2 {
     font-size: 7rem;
   }
   .separador div {
@@ -147,24 +147,18 @@
 }
 
 @media (max-width: 950px) {
-  .expro h2 {
+  .container_expro h2 {
     font-size: 6rem;
-  }
-  .projetos h2 {
-    min-width: 4.5ch;
   }
   .separador div {
     margin: 47px 0px;
   }
+  .projetos h2 {
+    min-width: 4.5ch;
+  }
 }
 
 @media (max-width: 800px) {
-  .experiencias {
-    grid-template-columns: 1fr;
-  }
-  .projetos {
-    grid-template-columns: 1fr;
-  }
   .container_expro {
     padding: 120px 100px;
     gap: 120px 40px;
@@ -175,23 +169,25 @@
     text-transform: capitalize;
     max-width: initial;
   }
-  .projetos h2 {
-    display: none;
+  .experiencias {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
   .experiencias_texto p {
     font-size: 1.25rem;
   }
-  .experiencias {
-    gap: 40px;
-  }
-  .experiencias a {
+  .experiencias_texto a {
     font-size: 1.25rem;
   }
   .separador {
     display: none;
   }
   .projetos {
+    grid-template-columns: 1fr;
     gap: 40px;
+  }
+  .projetos h2 {
+    display: none;
   }
 }
 

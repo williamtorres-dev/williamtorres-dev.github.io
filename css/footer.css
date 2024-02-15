@@ -29,16 +29,16 @@ footer {
   margin-bottom: 3px;
 }
 
+.email {
+  padding: 2px 10px;
+}
+
 .dados li,
 .dados a {
   color: #e6e6e6;
   font-size: 1.125rem;
   line-height: 1.5;
   font-weight: bold;
-}
-
-.email {
-  padding: 2px 10px;
 }
 
 .dados a {
@@ -57,7 +57,7 @@ footer {
   padding-top: 15px;
 }
 
-.redes_sociais ul {
+.redes_sociais {
   display: flex;
   justify-content: center;
   gap: 30px;
