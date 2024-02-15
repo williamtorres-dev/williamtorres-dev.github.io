@@ -42,29 +42,27 @@ h1 {
   gap: 40px;
 }
 
-.botoes a {
+.botao_preenchido button {
+  background: var(--gradiente-pri);
+  color: var(--base1);
+  width: 199px;
+  white-space: nowrap;
+  border-radius: 5px;
+  box-shadow: var(--sombra1);
+  border: 2px solid transparent;
   font-size: 1.25rem;
   line-height: 1.5rem;
   padding: 10px 20px;
 }
 
-.botao_preenchido {
-  background: var(--gradiente-pri);
-  color: var(--base1);
-  width: 156px;
-  flex-wrap: wrap;
-  border-radius: 5px;
-  box-shadow: var(--sombra);
-  border: 2px solid transparent;
-}
-
-.botao_preenchido:hover {
+.botao_preenchido button:hover {
   background-image: none;
   background-color: var(--base1);
   color: var(--primaria);
   text-align: center;
   border: var(--borda-pri);
   box-shadow: none;
+  cursor: pointer;
 }
 
 .botao_vazio {
@@ -75,13 +73,16 @@ h1 {
   flex-wrap: wrap;
   border: var(--borda-pri);
   border-radius: 5px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  padding: 10px 20px;
 }
 
 .botao_vazio:hover {
   background: var(--gradiente-pri);
   border: 2px solid transparent;
   color: var(--base1);
-  box-shadow: var(--sombra);
+  box-shadow: var(--sombra1);
 }
 
 .botao_vazio:hover path {
@@ -95,7 +96,7 @@ h1 {
 .introducao img {
   justify-self: end;
   border-radius: 10px;
-  box-shadow: var(--sombra);
+  box-shadow: var(--sombra1);
 }
 
 .sobre {

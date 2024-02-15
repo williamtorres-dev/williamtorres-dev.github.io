@@ -87,7 +87,7 @@
   margin-bottom: 20px;
   border-radius: 5px;
   position: relative;
-  box-shadow: var(--sombra);
+  box-shadow: var(--sombra1);
 }
 
 .projeto h3 {
