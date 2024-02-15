@@ -1,5 +1,5 @@
 footer {
-  background-color: #000000;
+  background-color: var(--base7);
 }
 
 .container_contato {
@@ -13,7 +13,7 @@ footer {
 }
 
 .dados {
-  border-bottom: 2px solid #924cd9;
+  border-bottom: var(--borda-qua);
   padding-bottom: 10px;
 }
 
@@ -35,7 +35,7 @@ footer {
 
 .dados li,
 .dados a {
-  color: #e6e6e6;
+  color: var(--base1);
   font-size: 1.125rem;
   line-height: 1.5;
   font-weight: bold;
@@ -46,11 +46,11 @@ footer {
 }
 
 .dados a:hover {
-  color: #924cd9;
+  color: var(--quaternaria);
 }
 
 .copy {
-  color: #999999;
+  color: var(--base3);
   font-size: 1.125rem;
   line-height: 1.5;
   text-align: center;
@@ -68,13 +68,13 @@ footer {
 }
 
 .dribbble:hover stop {
-  stop-color: #e6e6e6;
+  stop-color: var(--base1);
 }
 
 .github:hover stop {
-  stop-color: #e6e6e6;
+  stop-color: var(--base1);
 }
 
 .linkedin:hover stop {
-  stop-color: #e6e6e6;
+  stop-color: var(--base1);
 }

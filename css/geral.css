@@ -1,5 +1,26 @@
+:root {
+  --base1: #e6e6e6;
+  --base2: #bfbfbf;
+  --base3: #999999;
+  --base4: #737373;
+  --base5: #4d4d4d;
+  --base6: #262626;
+  --base7: #000000;
+  --borda-b2: 2px solid var(--base2);
+  --borda-pri: 2px solid var(--primaria);
+  --borda-sec: 2px solid var(--secundaria);
+  --borda-qua: 2px solid var(--quaternaria);
+  --gradiente-pri: linear-gradient(#3030bf, #1919a6);
+  --gradiente-sec: linear-gradient(#3dcccc, #24b2b2);
+  --gradiente-ter: linear-gradient(#4c93d9, #3078bf);
+  --primaria: #2424b2;
+  --secundaria: #30bfbf;
+  --quaternaria: #924cd9;
+  --sombra: 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
 body {
-  background-color: #e6e6e6;
+  background-color: var(--base1);
   margin: 0px;
   font-family: "Fira Sans", Arial, Helvetica, sans-serif;
 }

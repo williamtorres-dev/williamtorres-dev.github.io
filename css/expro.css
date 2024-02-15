@@ -1,5 +1,5 @@
 .expro {
-  background-color: #4d4d4d;
+  background-color: var(--base5);
 }
 
 .container_expro {
@@ -11,7 +11,7 @@
 }
 
 .container_expro h2 {
-  color: #262626;
+  color: var(--base6);
   font-size: 8rem;
   line-height: 1;
   text-transform: uppercase;
@@ -30,7 +30,7 @@
   min-width: 25ch;
   font-size: 1.5rem;
   line-height: 1.875rem;
-  color: #bfbfbf;
+  color: var(--base2);
 }
 
 .experiencias_texto p + p {
@@ -38,18 +38,18 @@
 }
 
 .experiencias_texto strong {
-  color: #e6e6e6;
+  color: var(--base1);
 }
 
 .experiencias_texto a {
-  color: #30bfbf;
+  color: var(--secundaria);
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 1.875rem;
 }
 
 .experiencias_texto a:hover {
-  color: #e6e6e6;
+  color: var(--base1);
 }
 
 .separador {
@@ -58,13 +58,13 @@
 }
 
 .separador div {
-  background-color: #737373;
+  background-color: var(--base4);
   height: 2px;
   margin: 63px 0px;
 }
 
 .separador h2 {
-  color: #737373;
+  color: var(--base4);
   margin: 0px 40px;
 }
 
@@ -83,15 +83,15 @@
   grid-template-columns: 1fr 1fr;
   gap: 10px 20px;
   padding: 20px 40px;
-  background-color: #262626;
+  background-color: var(--base6);
   margin-bottom: 20px;
   border-radius: 5px;
   position: relative;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--sombra);
 }
 
 .projeto h3 {
-  color: #e6e6e6;
+  color: var(--base1);
   font-size: 1.125rem;
   line-height: 1.25;
   margin-bottom: 10px;
@@ -99,8 +99,8 @@
 
 .ano {
   position: absolute;
-  background: linear-gradient(#3dcccc, #24b2b2);
-  color: #262626;
+  background: var(--gradiente-sec);
+  color: var(--base6);
   padding: 5px 10px;
   width: 40px;
   height: 20px;
@@ -113,11 +113,11 @@
 
 .descricao p {
   line-height: 1.25;
-  color: #bfbfbf;
+  color: var(--base2);
 }
 
 .habilidades {
-  border-left: 2px solid #30bfbf;
+  border-left: var(--borda-sec);
   padding-left: 20px;
 }
 
@@ -129,10 +129,10 @@
 }
 
 .habilidades li {
-  color: #bfbfbf;
+  color: var(--base2);
   font-size: 0.875rem;
   line-height: 1.25;
-  background-color: #4d4d4d;
+  background-color: var(--base5);
   padding: 5px 10px;
   border-radius: 5px;
 }
@@ -164,7 +164,7 @@
     gap: 120px 40px;
   }
   .container_expro h2 {
-    color: #e6e6e6;
+    color: var(--base1);
     font-size: 3rem;
     text-transform: capitalize;
     max-width: initial;
@@ -211,7 +211,7 @@
   }
   .habilidades {
     border-left: none;
-    border-top: 2px solid #30bfbf;
+    border-top: var(--borda-sec);
     padding-left: 0px;
     padding-top: 20px;
   }

@@ -1,5 +1,5 @@
 .cursos {
-  background-color: #262626;
+  background-color: var(--base6);
 }
 
 .container_cursos {
@@ -12,7 +12,7 @@
 }
 
 .container_cursos h2 {
-  color: #000000;
+  color: var(--base7);
   font-size: 8rem;
   line-height: 1;
   text-transform: uppercase;
@@ -28,14 +28,14 @@
 }
 
 .card {
-  background-color: #000000;
+  background-color: var(--base7);
   width: 120px;
   padding: 20px;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   position: relative;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--sombra);
 }
 
 .card::before {
@@ -43,7 +43,7 @@
   display: block;
   width: 10px;
   height: 30px;
-  background: linear-gradient(#4c93d9, #3078bf);
+  background: var(--gradiente-ter);
   border-radius: 1px;
   position: absolute;
   left: -5px;
@@ -51,13 +51,13 @@
 }
 
 .card span {
-  color: #999999;
+  color: var(--base3);
   font-size: 0.875rem;
   margin-bottom: 10px;
 }
 
 .card h3 {
-  color: #e6e6e6;
+  color: var(--base1);
   font-size: 1.125rem;
   line-height: 1.5;
 }
@@ -91,7 +91,7 @@
     gap: 40px;
   }
   .container_cursos h2 {
-    color: #e6e6e6;
+    color: var(--base1);
     font-size: 3rem;
     text-transform: capitalize;
     max-width: initial;

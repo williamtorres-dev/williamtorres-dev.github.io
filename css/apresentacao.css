@@ -10,7 +10,7 @@
 .apresentacao p {
   font-size: 1.5rem;
   line-height: 1.875rem;
-  color: #4d4d4d;
+  color: var(--base5);
 }
 
 .introducao {
@@ -25,7 +25,7 @@ h1 {
 }
 
 .introducao_texto span {
-  color: #2424b2;
+  color: var(--primaria);
 }
 
 .introducao_texto p {
@@ -49,43 +49,43 @@ h1 {
 }
 
 .botao_preenchido {
-  background: linear-gradient(#3030bf, #1919a6);
-  color: #e6e6e6;
+  background: var(--gradiente-pri);
+  color: var(--base1);
   width: 156px;
   flex-wrap: wrap;
   border-radius: 5px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--sombra);
   border: 2px solid transparent;
 }
 
 .botao_preenchido:hover {
   background-image: none;
-  background-color: #e6e6e6;
-  color: #2424b2;
+  background-color: var(--base1);
+  color: var(--primaria);
   text-align: center;
-  border: 2px solid #2424b2;
+  border: var(--borda-pri);
   box-shadow: none;
 }
 
 .botao_vazio {
   display: flex;
-  color: #2424b2;
+  color: var(--primaria);
   width: 156px;
   justify-content: space-between;
   flex-wrap: wrap;
-  border: 2px solid #2424b2;
+  border: var(--borda-pri);
   border-radius: 5px;
 }
 
 .botao_vazio:hover {
-  background: linear-gradient(#3030bf, #1919a6);
+  background: var(--gradiente-pri);
   border: 2px solid transparent;
-  color: #e6e6e6;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.3);
+  color: var(--base1);
+  box-shadow: var(--sombra);
 }
 
 .botao_vazio:hover path {
-  fill: #e6e6e6;
+  fill: var(--base1);
 }
 
 .download {
@@ -95,7 +95,7 @@ h1 {
 .introducao img {
   justify-self: end;
   border-radius: 10px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--sombra);
 }
 
 .sobre {
@@ -106,7 +106,7 @@ h1 {
 }
 
 .sobre h2 {
-  color: #bfbfbf;
+  color: var(--base2);
   font-size: 8rem;
   line-height: 1;
   text-transform: uppercase;
@@ -123,19 +123,19 @@ h1 {
 }
 
 .sobre_texto strong {
-  color: #000000;
+  color: var(--base7);
 }
 
 .sobre_texto a {
   padding: 0px;
-  color: #2424b2;
+  color: var(--primaria);
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 1.875rem;
 }
 
 .sobre_texto a:hover {
-  color: #000000;
+  color: var(--base7);
 }
 
 @media (max-width: 1254px) {
@@ -182,7 +182,7 @@ h1 {
     grid-template-columns: 1fr;
   }
   .sobre h2 {
-    color: #000000;
+    color: var(--base7);
     font-size: 3rem;
     text-transform: capitalize;
     max-width: initial;
