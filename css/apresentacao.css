@@ -139,6 +139,10 @@ h1 {
   color: var(--base7);
 }
 
+.sobre_texto a:focus {
+  color: var(--primaria);
+}
+
 @media (max-width: 1254px) {
   .botoes {
     flex-wrap: nowrap;

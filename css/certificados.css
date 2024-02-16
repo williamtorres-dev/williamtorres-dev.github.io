@@ -39,12 +39,14 @@
   transition: transform 0.3s;
 }
 
-.card:hover {
+.card:hover,
+.card:focus {
   transform: scale(1.05);
   box-shadow: var(--sombra2);
 }
 
-.card:hover h3 {
+.card:hover h3,
+.card:focus h3 {
   color: var(--terciaria);
 }
 

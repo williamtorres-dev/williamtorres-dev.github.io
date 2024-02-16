@@ -37,7 +37,8 @@ footer {
   padding: 5px 10px;
 }
 
-.dados a:hover {
+.dados a:hover,
+.dados a:focus {
   color: var(--quaternaria);
 }
 
@@ -59,14 +60,17 @@ footer {
   padding: 10px;
 }
 
-.dribbble:hover stop {
+.dribbble:hover stop,
+.dribbble:focus stop {
   stop-color: var(--base1);
 }
 
-.github:hover stop {
+.github:hover stop,
+.github:focus stop {
   stop-color: var(--base1);
 }
 
-.linkedin:hover stop {
+.linkedin:hover stop,
+.linkedin:focus stop {
   stop-color: var(--base1);
 }

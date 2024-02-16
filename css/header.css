@@ -23,8 +23,21 @@ header {
   border: 2px solid transparent;
 }
 
-.header_menu a:hover {
+.sob1:hover {
   color: var(--primaria);
+}
+
+.exp2:hover,
+.pro3:hover {
+  color: var(--secundaria);
+}
+
+.cer4:hover {
+  color: var(--terciaria);
+}
+
+.con5:hover {
+  color: var(--quaternaria);
 }
 
 @media (max-width: 1140px) {
@@ -32,23 +45,46 @@ header {
     flex-direction: column;
     gap: 40px;
   }
-  header a {
-    border-radius: 5px;
-  }
-  header a:hover {
-    border: var(--borda-pri);
-  }
-  header a:focus {
-    background-image: var(--gradiente-pri);
-  }
   .header_menu a {
     border: var(--borda-b2);
+    border-radius: 5px;
   }
-  .header_menu a:hover {
+  .sob1:hover {
+    border: var(--borda-pri);
     color: var(--primaria);
+  }
+  .exp2:hover,
+  .pro3:hover {
+    border: var(--borda-sec);
+    color: var(--secundaria);
+  }
+  .cer4:hover {
+    border: var(--borda-ter);
+    color: var(--terciaria);
+  }
+  .con5:hover {
+    border: var(--borda-qua);
+    color: var(--quaternaria);
   }
   .header_menu a:focus {
     color: var(--base1);
-    border: 2px solid transparent;
+    outline: 2px solid transparent;
+  }
+  .sob1:focus {
+    background: var(--gradiente-pri);
+    border: var(--borda-pri);
+  }
+  .exp2:focus,
+  .pro3:focus {
+    background: var(--gradiente-sec);
+    border: var(--borda-sec);
+  }
+  .cer4:focus {
+    background: var(--gradiente-ter);
+    border: var(--borda-ter);
+  }
+  .con5:focus {
+    background: var(--gradiente-qua);
+    border: var(--borda-qua);
   }
 }

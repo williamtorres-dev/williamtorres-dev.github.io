@@ -52,6 +52,10 @@
   color: var(--base1);
 }
 
+.experiencias_texto a:focus {
+  color: var(--secundaria);
+}
+
 .separador {
   display: grid;
   grid-template-columns: 4fr 1fr 7fr;
@@ -88,6 +92,12 @@
   border-radius: 5px;
   position: relative;
   box-shadow: var(--sombra1);
+  transition: transform 0.5s;
+}
+
+.projeto:hover,
+.projeto:focus {
+  transform: translateX(-60px);
 }
 
 .projeto h3 {
@@ -125,7 +135,15 @@
   color: var(--secundaria);
 }
 
+.descricao a:focus {
+  color: var(--secundaria);
+}
+
 .descricao a:hover .link path {
+  fill: var(--secundaria);
+}
+
+.descricao a:focus .link path {
   fill: var(--secundaria);
 }
 
@@ -162,6 +180,10 @@
   .separador div {
     margin: 55px 0px;
   }
+  .projeto:hover,
+  .projeto:focus {
+    transform: translateX(-50px);
+  }
 }
 
 @media (max-width: 950px) {
@@ -173,6 +195,10 @@
   }
   .projetos h2 {
     min-width: 4.5ch;
+  }
+  .projeto:hover,
+  .projeto:focus {
+    transform: translateX(-40px);
   }
 }
 
@@ -207,6 +233,10 @@
   .projetos h2 {
     display: none;
   }
+  .projeto:hover,
+  .projeto:focus {
+    transform: translateX(-30px);
+  }
 }
 
 @media (max-width: 390px) {
@@ -223,6 +253,10 @@
   }
   .projeto {
     grid-template-columns: 1fr;
+  }
+  .projeto:hover,
+  .projeto:focus {
+    transform: translateX(-20px);
   }
   .descricao {
     padding-bottom: 10px;
