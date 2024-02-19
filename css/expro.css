@@ -29,7 +29,7 @@
   max-width: 44ch;
   min-width: 25ch;
   font-size: 1.5rem;
-  line-height: 1.875rem;
+  line-height: 1.25;
   color: var(--base2);
 }
 
@@ -85,7 +85,7 @@
 .projeto {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px 20px;
+  gap: 20px;
   padding: 20px 40px;
   background-color: var(--base6);
   margin-bottom: 20px;
@@ -219,6 +219,7 @@
   }
   .experiencias_texto p {
     font-size: 1.25rem;
+    line-height: 1.2;
   }
   .experiencias_texto a {
     font-size: 1.25rem;

@@ -9,7 +9,7 @@
 
 .apresentacao p {
   font-size: 1.5rem;
-  line-height: 1.875rem;
+  line-height: 1.25;
   color: var(--base5);
 }
 
@@ -21,7 +21,7 @@
 
 h1 {
   font-size: 3rem;
-  line-height: 3.75rem;
+  line-height: 1.25;
 }
 
 .introducao_texto span {
@@ -94,8 +94,8 @@ h1 {
 }
 
 .introducao img {
-  justify-self: end;
-  border-radius: 10px;
+  justify-self: center;
+  border-radius: 15px;
   box-shadow: var(--sombra1);
 }
 
@@ -194,6 +194,7 @@ h1 {
   }
   .sobre_texto p {
     font-size: 1.25rem;
+    line-height: 1.2;
   }
   .sobre_texto a {
     font-size: 1.25rem;
