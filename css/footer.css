@@ -80,6 +80,10 @@ footer {
   padding-top: 20px;
 }
 
+.img_fmobi {
+  display: none;
+}
+
 @media (max-width: 1188px) {
   .contatos {
     grid-template-columns: 1fr 8fr 1fr;
@@ -96,5 +100,26 @@ footer {
     flex-direction: column;
     align-items: flex-end;
     gap: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container_contato {
+    /* max-width: 400px; */
+    padding: 40px 60px;
+  }
+  .contatos {
+    grid-template-columns: 1fr;
+  }
+  .img_fdesk {
+    display: none;
+  }
+  .redes_sociais {
+    flex-direction: initial;
+  }
+  .img_fmobi {
+    display: initial;
+    margin: 40px 0px 0px 0px;
+    justify-self: center;
   }
 }
