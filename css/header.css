@@ -18,26 +18,26 @@ header {
   font-size: 1.125rem;
   line-height: 1.3;
   padding: 10px 20px;
-  color: var(--base7);
+  color: var(--menu);
   display: block;
   border: 2px solid transparent;
 }
 
 .sob1:hover {
-  color: var(--primaria);
+  color: var(--link2);
 }
 
 .exp2:hover,
 .pro3:hover {
-  color: var(--secundaria);
+  color: var(--link1);
 }
 
 .cer4:hover {
-  color: var(--terciaria);
+  color: var(--link2);
 }
 
 .con5:hover {
-  color: var(--quaternaria);
+  color: var(--link1);
 }
 
 @media (max-width: 1140px) {
@@ -46,45 +46,23 @@ header {
     gap: 40px;
   }
   .header_menu a {
-    border: var(--borda-b2);
+    background-color: var(--chip1);
     border-radius: 5px;
   }
-  .sob1:hover {
-    border: var(--borda-pri);
-    color: var(--primaria);
-  }
-  .exp2:hover,
-  .pro3:hover {
-    border: var(--borda-sec);
-    color: var(--secundaria);
-  }
-  .cer4:hover {
-    border: var(--borda-ter);
-    color: var(--terciaria);
-  }
-  .con5:hover {
-    border: var(--borda-qua);
-    color: var(--quaternaria);
-  }
   .header_menu a:focus {
-    color: var(--base1);
     outline: 2px solid transparent;
   }
   .sob1:focus {
-    background: var(--gradiente-pri);
-    border: var(--borda-pri);
+    color: var(--link2);
   }
   .exp2:focus,
   .pro3:focus {
-    background: var(--gradiente-sec);
-    border: var(--borda-sec);
+    color: var(--link1);
   }
   .cer4:focus {
-    background: var(--gradiente-ter);
-    border: var(--borda-ter);
+    color: var(--link2);
   }
   .con5:focus {
-    background: var(--gradiente-qua);
-    border: var(--borda-qua);
+    color: var(--link1);
   }
 }

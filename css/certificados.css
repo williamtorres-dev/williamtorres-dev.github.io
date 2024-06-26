@@ -1,5 +1,5 @@
 .cursos {
-  background-color: var(--base6);
+  background-color: var(--background1);
 }
 
 .container_cursos {
@@ -12,7 +12,7 @@
 }
 
 .container_cursos h2 {
-  color: var(--base7);
+  color: var(--subtitulo1);
   font-size: 8rem;
   line-height: 1;
   text-transform: uppercase;
@@ -28,7 +28,7 @@
 }
 
 .card {
-  background-color: var(--base7);
+  background-color: var(--card2);
   width: 120px;
   padding: 20px;
   border-radius: 5px;
@@ -47,7 +47,7 @@
 
 .card:hover h3,
 .card:focus h3 {
-  color: var(--terciaria);
+  color: var(--link2);
 }
 
 .card::before {
@@ -55,21 +55,21 @@
   display: block;
   width: 10px;
   height: 30px;
-  background: var(--gradiente-ter);
-  border-radius: 1px;
+  background: var(--chip3);
+  border-radius: 2px;
   position: absolute;
   left: -5px;
   top: 45px;
 }
 
 .card span {
-  color: var(--base3);
+  color: var(--texto);
   font-size: 0.875rem;
   margin-bottom: 10px;
 }
 
 .card h3 {
-  color: var(--base1);
+  color: var(--titulo);
   font-size: 1.125rem;
   line-height: 1.5;
 }
@@ -109,7 +109,7 @@
     gap: 40px;
   }
   .container_cursos h2 {
-    color: var(--base1);
+    color: var(--titulo);
     font-size: 3rem;
     text-transform: capitalize;
     max-width: initial;

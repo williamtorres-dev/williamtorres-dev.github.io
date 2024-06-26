@@ -1,5 +1,5 @@
 footer {
-  background-color: var(--base7);
+  background-color: var(--background2);
 }
 
 .container_contato {
@@ -28,7 +28,7 @@ footer {
 
 .dados li,
 .dados a {
-  color: var(--base1);
+  color: var(--strongtext);
   font-size: 1.125rem;
   line-height: 1.5;
   font-weight: bold;
@@ -40,7 +40,7 @@ footer {
 
 .dados a:hover,
 .dados a:focus {
-  color: var(--quaternaria);
+  color: var(--link1);
 }
 
 .redes_sociais {
@@ -49,38 +49,38 @@ footer {
   gap: 30px;
 }
 
-.dribbble:hover stop,
-.dribbble:focus stop {
-  stop-color: var(--base1);
+.dribbble:hover path,
+.dribbble:focus path {
+  fill: var(--icone);
 }
 
-.github:hover stop,
-.github:focus stop {
-  stop-color: var(--base1);
+.github:hover path,
+.github:focus path {
+  fill: var(--icone);
 }
 
-.linkedin:hover stop,
-.linkedin:focus stop {
-  stop-color: var(--base1);
+.linkedin:hover path,
+.linkedin:focus path {
+  fill: var(--icone);
 }
 
 .separador_footer {
   grid-column: 1 / -1;
   grid-row: 2;
-  background-color: var(--quaternaria);
+  background-color: var(--link1);
 }
 
 .copy {
   grid-column: 1 / -1;
   grid-row: 3;
-  color: var(--base3);
+  color: var(--texto);
   font-size: 1.125rem;
   line-height: 1.5;
   text-align: center;
   padding-top: 20px;
 }
 
-.img_fmobi {
+.logo_mobile {
   display: none;
 }
 
@@ -111,13 +111,13 @@ footer {
   .contatos {
     grid-template-columns: 1fr;
   }
-  .img_fdesk {
+  .logo_desk {
     display: none;
   }
   .redes_sociais {
     flex-direction: initial;
   }
-  .img_fmobi {
+  .logo_mobile {
     display: initial;
     margin: 40px 0px 0px 0px;
     justify-self: center;

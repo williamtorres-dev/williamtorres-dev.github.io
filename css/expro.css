@@ -1,5 +1,5 @@
 .expro {
-  background-color: var(--base5);
+  background-color: var(--background2);
 }
 
 .container_expro {
@@ -11,7 +11,7 @@
 }
 
 .container_expro h2 {
-  color: var(--base6);
+  color: var(--subtitulo2);
   font-size: 8rem;
   line-height: 1;
   text-transform: uppercase;
@@ -30,7 +30,7 @@
   min-width: 25ch;
   font-size: 1.5rem;
   line-height: 1.25;
-  color: var(--base2);
+  color: var(--texto);
 }
 
 .experiencias_texto p + p {
@@ -38,22 +38,23 @@
 }
 
 .experiencias_texto strong {
-  color: var(--base1);
+  color: var(--strongtext);
 }
 
 .experiencias_texto a {
-  color: var(--secundaria);
+  color: var(--link1);
   font-weight: bold;
   font-size: 1.5rem;
   line-height: 1.875rem;
 }
 
 .experiencias_texto a:hover {
-  color: var(--base1);
+  color: var(--strongtext);
 }
 
 .experiencias_texto a:focus {
-  color: var(--secundaria);
+  color: var(--strongtext);
+  outline: 2px solid transparent;
 }
 
 .separador {
@@ -62,13 +63,13 @@
 }
 
 .separador div {
-  background-color: var(--base4);
+  background-color: var(--separadorbase);
   height: 2px;
   margin: 63px 0px;
 }
 
 .separador h2 {
-  color: var(--base4);
+  color: var(--subtitulo2);
   margin: 0px 40px;
 }
 
@@ -82,26 +83,26 @@
   max-width: 4.5ch;
 }
 
-.projeto {
+.card_projeto {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   padding: 20px 40px;
-  background-color: var(--base6);
+  background-color: var(--card1);
   margin-bottom: 20px;
+  border: var(--bordercard);
   border-radius: 5px;
   position: relative;
   box-shadow: var(--sombra1);
   transition: transform 0.5s;
 }
 
-.projeto:hover,
-.projeto:focus {
+.card_projeto:hover {
   transform: translateX(-60px);
 }
 
-.projeto h3 {
-  color: var(--base1);
+.card_projeto h3 {
+  color: var(--titulo);
   font-size: 1.125rem;
   line-height: 1.25;
   margin-bottom: 10px;
@@ -109,20 +110,21 @@
 
 .ano {
   position: absolute;
-  background: var(--gradiente-sec);
-  color: var(--base6);
+  background: var(--chip2);
+  color: var(--onchip2);
+  font-size: 1.125rem;
   padding: 5px 10px;
   width: 40px;
   height: 20px;
   text-align: center;
-  border-radius: 3px;
+  border-radius: 4px;
   rotate: 270deg;
   top: 35px;
   left: -30px;
 }
 
 .descricao a {
-  color: var(--base1);
+  color: var(--titulo);
   font-size: 1.125rem;
   line-height: 1.25;
   margin-bottom: 10px;
@@ -132,28 +134,30 @@
 }
 
 .descricao a:hover {
-  color: var(--secundaria);
+  color: var(--link1);
 }
 
 .descricao a:focus {
-  color: var(--secundaria);
+  color: var(--link1);
+  outline: 2px solid transparent;
 }
 
 .descricao a:hover .link path {
-  fill: var(--secundaria);
+  fill: var(--link1);
 }
 
 .descricao a:focus .link path {
-  fill: var(--secundaria);
+  fill: var(--link1);
+  outline: 2px solid transparent;
 }
 
 .descricao p {
   line-height: 1.25;
-  color: var(--base2);
+  color: var(--texto);
 }
 
 .habilidades {
-  border-left: var(--borda-sec);
+  border-left: var(--separadorcor);
   padding-left: 20px;
 }
 
@@ -165,12 +169,12 @@
 }
 
 .habilidades li {
-  color: var(--base2);
+  color: var(--titulo);
   font-size: 0.875rem;
   line-height: 1.25;
-  background-color: var(--base5);
+  background-color: var(--chip1);
   padding: 5px 10px;
-  border-radius: 5px;
+  border-radius: 4px;
 }
 
 @media (max-width: 1140px) {
@@ -180,8 +184,8 @@
   .separador div {
     margin: 55px 0px;
   }
-  .projeto:hover,
-  .projeto:focus {
+  .card_projeto:hover,
+  .card_projeto:focus {
     transform: translateX(-50px);
   }
 }
@@ -196,8 +200,8 @@
   .projetos h2 {
     min-width: 4.5ch;
   }
-  .projeto:hover,
-  .projeto:focus {
+  .card_projeto:hover,
+  .card_projeto:focus {
     transform: translateX(-40px);
   }
 }
@@ -208,7 +212,7 @@
     gap: 120px 40px;
   }
   .container_expro h2 {
-    color: var(--base1);
+    color: var(--titulo);
     font-size: 3rem;
     text-transform: capitalize;
     max-width: initial;
@@ -234,8 +238,8 @@
   .projetos h2 {
     display: none;
   }
-  .projeto:hover,
-  .projeto:focus {
+  .card_projeto:hover,
+  .card_projeto:focus {
     transform: translateX(-30px);
   }
 }
@@ -252,11 +256,11 @@
   .projetos {
     padding-right: 40px;
   }
-  .projeto {
+  .card_projeto {
     grid-template-columns: 1fr;
   }
-  .projeto:hover,
-  .projeto:focus {
+  .card_projeto:hover,
+  .card_projeto:focus {
     transform: translateX(-20px);
   }
   .descricao {
@@ -264,7 +268,7 @@
   }
   .habilidades {
     border-left: none;
-    border-top: var(--borda-sec);
+    border-top: var(--separadorcor);
     padding-left: 0px;
     padding-top: 20px;
   }
