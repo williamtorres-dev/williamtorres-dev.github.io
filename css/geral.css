@@ -18,8 +18,17 @@
   --secundaria: #6db0f2;
   --terciaria: #5ce5e5;
   --quaternaria: #5f19a6;
-  --sombra1: 0px 1px 3px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.3);
-  --sombra2: 0px 2px 6px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.3);
+  --sombra1: 0px 2px 6px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.3);
+  --sombra2: 0px 1px 3px rgba(26, 26, 26, 0.15),
+    0px 1px 2px rgba(26, 26, 26, 0.3);
+  --sombra3: 0px 1px 2px rgba(51, 51, 51, 0.3),
+    0px 2px 6px rgba(51, 51, 51, 0.15);
+  --sombra4: 0px 1px 2px rgba(77, 77, 77, 0.3),
+    0px 1px 3px rgba(77, 77, 77, 0.15);
+  --sombra5: 0px 2px 6px rgba(26, 26, 26, 0.15),
+    0px 1px 2px rgba(26, 26, 26, 0.3);
+  --sombra6: 0px 1px 2px rgba(77, 77, 77, 0.3),
+    0px 2px 6px rgba(77, 77, 77, 0.15);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -38,6 +47,9 @@
     --chip1: var(--base8);
     --chip2: var(--gradiente-ter);
     --chip3: var(--gradiente-sec);
+    --elevacao1: var(--sombra1);
+    --elevacao2: var(--sombra2);
+    --elevacao3: var(--sombra5);
     --icone: var(--base1);
     --link1: var(--terciaria);
     --link2: var(--secundaria);
@@ -72,6 +84,9 @@
     --chip1: var(--base1);
     --chip2: var(--gradiente-qua);
     --chip3: var(--gradiente-pri);
+    --elevacao1: var(--sombra3);
+    --elevacao2: var(--sombra4);
+    --elevacao3: var(--sombra6);
     --icone: var(--base11);
     --link1: var(--quaternaria);
     --link2: var(--primaria);

@@ -35,14 +35,14 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  box-shadow: var(--sombra1);
+  box-shadow: var(--elevacao2);
   transition: transform 0.3s;
 }
 
 .card:hover,
 .card:focus {
   transform: scale(1.05);
-  box-shadow: var(--sombra2);
+  box-shadow: var(--elevacao3);
 }
 
 .card:hover h3,
