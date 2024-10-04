@@ -45,7 +45,7 @@ footer {
 
 .redes_sociais {
   display: flex;
-  justify-content: center;
+  justify-content: end;
   gap: 40px;
 }
 
@@ -92,6 +92,9 @@ footer {
   .dados {
     flex-direction: column;
     gap: 20px;
+  }
+  .redes_sociais {
+    justify-content: center;
   }
 }
 

@@ -7,7 +7,7 @@ if (window.SimpleAnime) {
 document.addEventListener("DOMContentLoaded", () => {
   const hamburguer = document.getElementById("hamburguer");
   const menu = document.getElementById("menu");
-  const links = document.querySelectorAll("#menu a");
+  const links = document.querySelectorAll(".smooth");
 
   if (hamburguer && menu) {
     hamburguer.addEventListener("click", () => {
