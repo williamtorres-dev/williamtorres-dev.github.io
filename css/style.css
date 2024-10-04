@@ -1,6 +1,7 @@
-@import "./geral.css";
-@import "./header.css";
+@import "./geral/geral.css";
+@import "./utilitarios/animacao.css";
+@import "./geral/header.css";
 @import "./apresentacao.css";
 @import "./expro.css";
 @import "./certificados.css";
-@import "./footer.css";
+@import "./geral/footer.css";

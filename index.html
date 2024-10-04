@@ -4,10 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>William Tôrres - Desenvolvedor e UX/UI Designer</title>
   <meta name="description" content="Desenvolvedor Front-end e Web Designer freelancer localizado na Bahia, Brasil.">
-  <link rel="stylesheet" href="/css/style.css">
+
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/css/style.css">
+  <script>document.documentElement.classList.add('js');</script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,47 +19,49 @@
 
 <body>
   <header>
-    <div alt="William Tôrres"><svg width="67" height="34" viewBox="0 0 67 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M66.0806 0L65.3126 6.048H57.1046V33.264H49.2326V6.048H40.6406V0H66.0806Z" fill="var(--logo)" />
-        <path d="M5.472 33.264H11.9058L11.184 27.312L7.87201 0H0L2.736 16.632L5.472 33.264Z" fill="#2424B3" />
-        <path d="M15.456 33.264L19.824 7.872L21.1782 0H15.792L11.184 27.312L11.9058 33.264H15.456Z" fill="#6DB0F2" />
-        <path d="M23.952 33.264H29.3094L28.368 27.312L24.048 0H21.1782L19.824 7.872L21.888 20.568L23.952 33.264Z" fill="#5CE6E6" />
-        <path d="M34.176 33.264L39.744 0H32.256L28.368 27.312L29.3094 33.264H34.176Z" fill="#5F19A6" />
+    <div alt="William Tôrres">
+      <svg width="70" height="35" viewBox="0 0 70 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M70 1.90735e-05L69.1864 6.36365H60.4916V35H52.1527V6.36365H43.0511V1.90735e-05H70Z" fill="var(--logo)" />
+        <path d="M5.79656 35H12.6119L11.8473 28.7374L8.33891 1.90735e-05H0L2.89828 17.5L5.79656 35Z" fill="#2424B3" />
+        <path d="M16.3727 35L20.9998 8.28285L22.4343 1.90735e-05H16.7287L11.8473 28.7374L12.6119 35H16.3727Z" fill="#6DB0F2" />
+        <path d="M25.3727 35H31.0478L30.0506 28.7374L25.4743 1.90735e-05H22.4343L20.9998 8.28285L23.1862 21.6414L25.3727 35Z" fill="#5CE6E6" />
+        <path d="M36.2031 35L42.1013 1.90735e-05H34.1692L30.0506 28.7374L31.0478 35H36.2031Z" fill="#5F19A6" />
       </svg>
     </div>
+    <button id="hamburguer"></button>
     <nav>
-      <ul class="header_menu">
+      <ul id="menu">
         <li><a class="sob1" href="#sobre">Sobre</a></li>
         <li><a class="exp2" href="#experiencias">Experiências</a></li>
         <li><a class="pro3" href="#projetos">Projetos</a></li>
         <li><a class="cer4" href="#certificados">Certificados</a></li>
-        <li><a class="con5" href="#contato">Contato</a></li>
+        <li><a class="con5" href="#contatos">Contatos</a></li>
       </ul>
     </nav>
   </header>
 
   <main aria-label="Apresentação" class="apresentacao">
-    <article aria-label="Introdução" class="introducao">
+    <section aria-label="Introdução" class="introducao">
       <section class="introducao_texto">
-        <h1>👋🏻 Oi,<br>
+        <h1 class="fadeInDown" data-anime="200">👋🏻 Oi,<br>
           Eu sou <span>William Tôrres</span></h1>
-        <p>Desenvolvedor Front-end e Web Designer freelancer localizado na Bahia, Brasil.</p>
-        <div class="botoes">
+        <p class="fadeInDown" data-anime="400">Desenvolvedor Front-end e Web Designer freelancer localizado na Bahia, Brasil.</p>
+        <div class="botoes fadeInDown" data-anime="600">
           <a class="botao_preenchido" href="mailto:williammacairatorres@gmail.com"> <button>Entre em contato</button></a>
-          <!-- <a class="botao_vazio" href="/">Download CV <div class="download"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a class="botao_vazio" href="/">Download CV <div class="download"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M12 15.575C11.8667 15.575 11.7417 15.5542 11.625 15.5125C11.5083 15.4708 11.4 15.4 11.3 15.3L7.7 11.7C7.5 11.5 7.40417 11.2667 7.4125 11C7.42083 10.7333 7.51667 10.5 7.7 10.3C7.9 10.1 8.1375 9.99583 8.4125 9.9875C8.6875 9.97917 8.925 10.075 9.125 10.275L11 12.15V5C11 4.71667 11.0958 4.47917 11.2875 4.2875C11.4792 4.09583 11.7167 4 12 4C12.2833 4 12.5208 4.09583 12.7125 4.2875C12.9042 4.47917 13 4.71667 13 5V12.15L14.875 10.275C15.075 10.075 15.3125 9.97917 15.5875 9.9875C15.8625 9.99583 16.1 10.1 16.3 10.3C16.4833 10.5 16.5792 10.7333 16.5875 11C16.5958 11.2667 16.5 11.5 16.3 11.7L12.7 15.3C12.6 15.4 12.4917 15.4708 12.375 15.5125C12.2583 15.5542 12.1333 15.575 12 15.575ZM6 20C5.45 20 4.97917 19.8042 4.5875 19.4125C4.19583 19.0208 4 18.55 4 18V16C4 15.7167 4.09583 15.4792 4.2875 15.2875C4.47917 15.0958 4.71667 15 5 15C5.28333 15 5.52083 15.0958 5.7125 15.2875C5.90417 15.4792 6 15.7167 6 16V18H18V16C18 15.7167 18.0958 15.4792 18.2875 15.2875C18.4792 15.0958 18.7167 15 19 15C19.2833 15 19.5208 15.0958 19.7125 15.2875C19.9042 15.4792 20 15.7167 20 16V18C20 18.55 19.8042 19.0208 19.4125 19.4125C19.0208 19.8042 18.55 20 18 20H6Z" fill="var(--botao)" />
-              </svg></div></a> -->
+              </svg></div></a>
         </div>
       </section>
-      <img src="/img/foto-perfil-2x.jpg" alt="Foto de William Tôrres" width="440" height="550">
-    </article>
+      <img class="fadeInRight" data-anime="800" src="/img/foto-perfil-2x.jpg" alt="Foto de William Tôrres" width="440" height="550">
+    </section>
 
     <section aria-label="Sobre Mim" class="sobre" id="sobre">
       <h2>Sobre Mim</h2>
       <div class="sobre_texto">
         <p>Formado em Arquitetura e Urbanismo no ano de 2018, descobri minha paixão pela programação e UX/UI Design ao iniciar meus estudos na área em 2020, em cursos intensivos online.</p>
-        <p>Concluí diversos cursos na plataforma de ensino <a href="https://www.origamid.com/" target="_blank">origamid.com</a> ao longo de um ano e meio, onde aprendi sobre <strong> HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>UX</strong> e <strong>UI Design</strong>, <strong>React</strong>, <strong>WordPress</strong>, <strong>Bootstrap</strong>, entre outros.</p>
-        <p>Atualmente estou cursando <strong>Gestão da Tecnologia da Informação (GTI)</strong> na <a href="https://adventista.edu.br/" target="_blank">Faculdade Adventista da Bahia (FADBA)</a>, curso nota 5 no ENAD.</p>
+        <p>Concluí diversos cursos na plataforma de ensino <a href="https://www.origamid.com/" target="_blank">origamid.com</a>, onde aprendi sobre <strong> HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, <strong>UX</strong> e <strong>UI Design</strong>, <strong>React</strong>, <strong>WordPress</strong>, <strong>Bootstrap</strong>, entre outros.</p>
+        <p>Em 2024 eu iniciei os estudos de graduação em <strong>Engenharia de Software</strong> pelo <a href="https://eadadventista.unasp.br/" target="_blank">UNASP EAD</a>. Curso em que prossigo estudando atualmente.</p>
       </div>
     </section>
   </main>
@@ -66,8 +71,10 @@
       <section aria-label="Experiências" class="experiencias" id="experiencias">
         <h2>Experiências</h2>
         <div class="experiencias_texto">
-          <p>Como experiência, tive a oportunidade de trabalhar como estagiário na <a href="https://mascatis.com/" target="_blank">Mascatis</a>, empresa de Marketing Digital, no ano de 2020, desenvolvendo sites em <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>.</p>
+          <p>Como experiência, tive a oportunidade de <strong>estagiar</strong> na <a href="https://mascatis.com/" target="_blank">Mascatis</a>, empresa de Marketing Digital, no ano de 2020, desenvolvendo sites em HTML e CSS.</p>
           <p>Também tive o privilégio de servir como voluntário no <a href="https://inq.conquista.ifba.edu.br/v1/" target="_blank">Portal de Inovação e Qualidade</a> do <strong>Instituto Federal da Bahia (IFBA)</strong> durante o ano de 2021.</p>
+          <p>Em 2023 eu participei ativamente da <strong>LADS (Liga acadêmica de Desenvolvimento de Software)</strong> do curso de GTI (Gestão da Tecnologia da Informação) da <a href="https://adventista.edu.br/" target="_blank">FADBA (Faculdade Adventista da Bahia)</a>.</p>
+          <p>Após estas experiências, em 2024 iniciei trabalhos como freelancer no desenvolvimento de sites.</p>
         </div>
       </section>
 
@@ -84,7 +91,19 @@
           <div class="card_projeto">
             <span class="ano">2024</span>
             <div class="descricao">
-              <h3>Bikcraft</h3>
+              <a href="./bikcraft/index.html" target="_blank">Bikcraft <div class="link">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_329_11)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.57511 2.35116L5.74883 3.17745C5.58717 3.33358 5.37065 3.41998 5.14591 3.41802C4.92117 3.41607 4.70619 3.32593 4.54727 3.167C4.38835 3.00808 4.2982 2.7931 4.29625 2.56836C4.2943 2.34362 4.38069 2.1271 4.53683 1.96545L5.36311 1.1383C6.09227 0.409147 7.08122 -0.000488292 8.1124 -0.000488281C9.14358 -0.00048827 10.1325 0.409147 10.8617 1.1383C11.5908 1.86746 12.0005 2.85641 12.0005 3.88759C12.0005 4.91877 11.5908 5.90772 10.8617 6.63687L10.0345 7.46316C9.95547 7.54503 9.86089 7.61033 9.75632 7.65525C9.65174 7.70017 9.53927 7.72381 9.42546 7.7248C9.31165 7.72579 9.19878 7.7041 9.09344 7.66101C8.9881 7.61791 8.8924 7.55426 8.81192 7.47378C8.73144 7.3933 8.66779 7.2976 8.62469 7.19226C8.5816 7.08692 8.55991 6.97406 8.5609 6.86024C8.56189 6.74643 8.58553 6.63396 8.63045 6.52938C8.67538 6.42481 8.74068 6.33023 8.82254 6.25116L9.64883 5.42402C10.0374 5.01273 10.2503 4.46613 10.2423 3.90037C10.2342 3.3346 10.0059 2.79427 9.60581 2.39418C9.20572 1.99408 8.66538 1.76576 8.09962 1.75773C7.53386 1.7497 6.98726 1.96259 6.57597 2.35116H6.57511ZM3.1774 4.53687C3.33809 4.69761 3.42836 4.91559 3.42836 5.14287C3.42836 5.37016 3.33809 5.58814 3.1774 5.74887L2.35111 6.57602C1.96254 6.98731 1.74965 7.53391 1.75768 8.09967C1.76572 8.66543 1.99404 9.20576 2.39413 9.60586C2.79422 10.006 3.33456 10.2343 3.90032 10.2423C4.46608 10.2503 5.01268 10.0374 5.42397 9.64887L6.25111 8.82259C6.41277 8.66645 6.62929 8.58006 6.85403 8.58201C7.07877 8.58396 7.29375 8.67411 7.45267 8.83303C7.61159 8.99195 7.70174 9.20693 7.70369 9.43167C7.70564 9.65641 7.61925 9.87293 7.46311 10.0346L6.63683 10.8609C5.90511 11.5771 4.92041 11.9758 3.89652 11.9703C2.87263 11.9649 1.89222 11.5558 1.16816 10.8318C0.444093 10.1079 0.0348314 9.12752 0.029233 8.10364C0.0236346 7.07975 0.422152 6.09499 1.13826 5.36316L1.9654 4.53687C2.12614 4.37618 2.34412 4.28591 2.5714 4.28591C2.79868 4.28591 3.01666 4.37618 3.1774 4.53687ZM7.89168 5.3203C8.04782 5.15864 8.13421 4.94213 8.13226 4.71739C8.13031 4.49265 8.04016 4.27767 7.88124 4.11874C7.72232 3.95982 7.50734 3.86968 7.2826 3.86772C7.05786 3.86577 6.84134 3.95217 6.67968 4.1083L4.10826 6.67973C3.95212 6.84139 3.86573 7.05791 3.86768 7.28265C3.86963 7.50739 3.95978 7.72237 4.1187 7.88129C4.27762 8.04021 4.4926 8.13036 4.71734 8.13231C4.94208 8.13426 5.1586 8.04787 5.32026 7.89173L7.89168 5.3203Z" fill="var(--titulo)" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_329_11">
+                        <rect width="12" height="12" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </a>
               <p>Projeto criado nos cursos de UI Design e HTML/CSS para Iniciantes.</p>
             </div>
             <div class="habilidades">
@@ -100,9 +119,79 @@
           </div>
 
           <div class="card_projeto">
+            <span class="ano">2024</span>
+            <div class="descricao">
+              <a href="https://santosfranklin.com.br/" target="_blank">Santos Franklin <div class="link">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_329_11)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.57511 2.35116L5.74883 3.17745C5.58717 3.33358 5.37065 3.41998 5.14591 3.41802C4.92117 3.41607 4.70619 3.32593 4.54727 3.167C4.38835 3.00808 4.2982 2.7931 4.29625 2.56836C4.2943 2.34362 4.38069 2.1271 4.53683 1.96545L5.36311 1.1383C6.09227 0.409147 7.08122 -0.000488292 8.1124 -0.000488281C9.14358 -0.00048827 10.1325 0.409147 10.8617 1.1383C11.5908 1.86746 12.0005 2.85641 12.0005 3.88759C12.0005 4.91877 11.5908 5.90772 10.8617 6.63687L10.0345 7.46316C9.95547 7.54503 9.86089 7.61033 9.75632 7.65525C9.65174 7.70017 9.53927 7.72381 9.42546 7.7248C9.31165 7.72579 9.19878 7.7041 9.09344 7.66101C8.9881 7.61791 8.8924 7.55426 8.81192 7.47378C8.73144 7.3933 8.66779 7.2976 8.62469 7.19226C8.5816 7.08692 8.55991 6.97406 8.5609 6.86024C8.56189 6.74643 8.58553 6.63396 8.63045 6.52938C8.67538 6.42481 8.74068 6.33023 8.82254 6.25116L9.64883 5.42402C10.0374 5.01273 10.2503 4.46613 10.2423 3.90037C10.2342 3.3346 10.0059 2.79427 9.60581 2.39418C9.20572 1.99408 8.66538 1.76576 8.09962 1.75773C7.53386 1.7497 6.98726 1.96259 6.57597 2.35116H6.57511ZM3.1774 4.53687C3.33809 4.69761 3.42836 4.91559 3.42836 5.14287C3.42836 5.37016 3.33809 5.58814 3.1774 5.74887L2.35111 6.57602C1.96254 6.98731 1.74965 7.53391 1.75768 8.09967C1.76572 8.66543 1.99404 9.20576 2.39413 9.60586C2.79422 10.006 3.33456 10.2343 3.90032 10.2423C4.46608 10.2503 5.01268 10.0374 5.42397 9.64887L6.25111 8.82259C6.41277 8.66645 6.62929 8.58006 6.85403 8.58201C7.07877 8.58396 7.29375 8.67411 7.45267 8.83303C7.61159 8.99195 7.70174 9.20693 7.70369 9.43167C7.70564 9.65641 7.61925 9.87293 7.46311 10.0346L6.63683 10.8609C5.90511 11.5771 4.92041 11.9758 3.89652 11.9703C2.87263 11.9649 1.89222 11.5558 1.16816 10.8318C0.444093 10.1079 0.0348314 9.12752 0.029233 8.10364C0.0236346 7.07975 0.422152 6.09499 1.13826 5.36316L1.9654 4.53687C2.12614 4.37618 2.34412 4.28591 2.5714 4.28591C2.79868 4.28591 3.01666 4.37618 3.1774 4.53687ZM7.89168 5.3203C8.04782 5.15864 8.13421 4.94213 8.13226 4.71739C8.13031 4.49265 8.04016 4.27767 7.88124 4.11874C7.72232 3.95982 7.50734 3.86968 7.2826 3.86772C7.05786 3.86577 6.84134 3.95217 6.67968 4.1083L4.10826 6.67973C3.95212 6.84139 3.86573 7.05791 3.86768 7.28265C3.86963 7.50739 3.95978 7.72237 4.1187 7.88129C4.27762 8.04021 4.4926 8.13036 4.71734 8.13231C4.94208 8.13426 5.1586 8.04787 5.32026 7.89173L7.89168 5.3203Z" fill="var(--titulo)" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_329_11">
+                        <rect width="12" height="12" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </a>
+              <p>Site desenvolvido para a candidatura a reeleição de Santos Franklin como prefeito de Satubinha - MA. </p>
+            </div>
+            <div class="habilidades">
+              <h3>Freelancer</h3>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>UX Design</li>
+                <li>UI Design</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card_projeto">
+            <span class="ano">2024</span>
+            <div class="descricao">
+              <a href="https://www.figma.com/proto/xOKW3rGkMifdWY8b6ZmzaU/Site---LADS?page-id=0%3A1&node-id=30-1368&node-type=canvas&viewport=334%2C48%2C0.12&t=XbBBCHV0AOlrEGMK-1&scaling=min-zoom&content-scaling=fixed" target="_blank">LADS <div class="link">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_329_11)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.57511 2.35116L5.74883 3.17745C5.58717 3.33358 5.37065 3.41998 5.14591 3.41802C4.92117 3.41607 4.70619 3.32593 4.54727 3.167C4.38835 3.00808 4.2982 2.7931 4.29625 2.56836C4.2943 2.34362 4.38069 2.1271 4.53683 1.96545L5.36311 1.1383C6.09227 0.409147 7.08122 -0.000488292 8.1124 -0.000488281C9.14358 -0.00048827 10.1325 0.409147 10.8617 1.1383C11.5908 1.86746 12.0005 2.85641 12.0005 3.88759C12.0005 4.91877 11.5908 5.90772 10.8617 6.63687L10.0345 7.46316C9.95547 7.54503 9.86089 7.61033 9.75632 7.65525C9.65174 7.70017 9.53927 7.72381 9.42546 7.7248C9.31165 7.72579 9.19878 7.7041 9.09344 7.66101C8.9881 7.61791 8.8924 7.55426 8.81192 7.47378C8.73144 7.3933 8.66779 7.2976 8.62469 7.19226C8.5816 7.08692 8.55991 6.97406 8.5609 6.86024C8.56189 6.74643 8.58553 6.63396 8.63045 6.52938C8.67538 6.42481 8.74068 6.33023 8.82254 6.25116L9.64883 5.42402C10.0374 5.01273 10.2503 4.46613 10.2423 3.90037C10.2342 3.3346 10.0059 2.79427 9.60581 2.39418C9.20572 1.99408 8.66538 1.76576 8.09962 1.75773C7.53386 1.7497 6.98726 1.96259 6.57597 2.35116H6.57511ZM3.1774 4.53687C3.33809 4.69761 3.42836 4.91559 3.42836 5.14287C3.42836 5.37016 3.33809 5.58814 3.1774 5.74887L2.35111 6.57602C1.96254 6.98731 1.74965 7.53391 1.75768 8.09967C1.76572 8.66543 1.99404 9.20576 2.39413 9.60586C2.79422 10.006 3.33456 10.2343 3.90032 10.2423C4.46608 10.2503 5.01268 10.0374 5.42397 9.64887L6.25111 8.82259C6.41277 8.66645 6.62929 8.58006 6.85403 8.58201C7.07877 8.58396 7.29375 8.67411 7.45267 8.83303C7.61159 8.99195 7.70174 9.20693 7.70369 9.43167C7.70564 9.65641 7.61925 9.87293 7.46311 10.0346L6.63683 10.8609C5.90511 11.5771 4.92041 11.9758 3.89652 11.9703C2.87263 11.9649 1.89222 11.5558 1.16816 10.8318C0.444093 10.1079 0.0348314 9.12752 0.029233 8.10364C0.0236346 7.07975 0.422152 6.09499 1.13826 5.36316L1.9654 4.53687C2.12614 4.37618 2.34412 4.28591 2.5714 4.28591C2.79868 4.28591 3.01666 4.37618 3.1774 4.53687ZM7.89168 5.3203C8.04782 5.15864 8.13421 4.94213 8.13226 4.71739C8.13031 4.49265 8.04016 4.27767 7.88124 4.11874C7.72232 3.95982 7.50734 3.86968 7.2826 3.86772C7.05786 3.86577 6.84134 3.95217 6.67968 4.1083L4.10826 6.67973C3.95212 6.84139 3.86573 7.05791 3.86768 7.28265C3.86963 7.50739 3.95978 7.72237 4.1187 7.88129C4.27762 8.04021 4.4926 8.13036 4.71734 8.13231C4.94208 8.13426 5.1586 8.04787 5.32026 7.89173L7.89168 5.3203Z" fill="var(--titulo)" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_329_11">
+                        <rect width="12" height="12" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </a>
+              <p>UX e UI Design do Site da Liga Acadêmica de Desenvolvimento de Software do curso de GTI da FADBA.</p>
+            </div>
+            <div class="habilidades">
+              <h3>LADS</h3>
+              <ul>
+                <li>UX Design</li>
+                <li>UI Design</li>
+                <li>Figma</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="card_projeto">
             <span class="ano">2021</span>
             <div class="descricao">
-              <h3>Sistema de Certificados</h3>
+              <a href="https://www.figma.com/proto/sG3BilAs60OSRgf3WbMHWg/Sistema-de-Certificados-IFBA?page-id=0%3A1&node-id=42-840&node-type=canvas&viewport=604%2C45%2C0.17&t=BvFiebyOANQcoE96-1&scaling=min-zoom&content-scaling=fixed" target="_blank">Sistema de Certificados <div class="link">
+                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_329_11)">
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.57511 2.35116L5.74883 3.17745C5.58717 3.33358 5.37065 3.41998 5.14591 3.41802C4.92117 3.41607 4.70619 3.32593 4.54727 3.167C4.38835 3.00808 4.2982 2.7931 4.29625 2.56836C4.2943 2.34362 4.38069 2.1271 4.53683 1.96545L5.36311 1.1383C6.09227 0.409147 7.08122 -0.000488292 8.1124 -0.000488281C9.14358 -0.00048827 10.1325 0.409147 10.8617 1.1383C11.5908 1.86746 12.0005 2.85641 12.0005 3.88759C12.0005 4.91877 11.5908 5.90772 10.8617 6.63687L10.0345 7.46316C9.95547 7.54503 9.86089 7.61033 9.75632 7.65525C9.65174 7.70017 9.53927 7.72381 9.42546 7.7248C9.31165 7.72579 9.19878 7.7041 9.09344 7.66101C8.9881 7.61791 8.8924 7.55426 8.81192 7.47378C8.73144 7.3933 8.66779 7.2976 8.62469 7.19226C8.5816 7.08692 8.55991 6.97406 8.5609 6.86024C8.56189 6.74643 8.58553 6.63396 8.63045 6.52938C8.67538 6.42481 8.74068 6.33023 8.82254 6.25116L9.64883 5.42402C10.0374 5.01273 10.2503 4.46613 10.2423 3.90037C10.2342 3.3346 10.0059 2.79427 9.60581 2.39418C9.20572 1.99408 8.66538 1.76576 8.09962 1.75773C7.53386 1.7497 6.98726 1.96259 6.57597 2.35116H6.57511ZM3.1774 4.53687C3.33809 4.69761 3.42836 4.91559 3.42836 5.14287C3.42836 5.37016 3.33809 5.58814 3.1774 5.74887L2.35111 6.57602C1.96254 6.98731 1.74965 7.53391 1.75768 8.09967C1.76572 8.66543 1.99404 9.20576 2.39413 9.60586C2.79422 10.006 3.33456 10.2343 3.90032 10.2423C4.46608 10.2503 5.01268 10.0374 5.42397 9.64887L6.25111 8.82259C6.41277 8.66645 6.62929 8.58006 6.85403 8.58201C7.07877 8.58396 7.29375 8.67411 7.45267 8.83303C7.61159 8.99195 7.70174 9.20693 7.70369 9.43167C7.70564 9.65641 7.61925 9.87293 7.46311 10.0346L6.63683 10.8609C5.90511 11.5771 4.92041 11.9758 3.89652 11.9703C2.87263 11.9649 1.89222 11.5558 1.16816 10.8318C0.444093 10.1079 0.0348314 9.12752 0.029233 8.10364C0.0236346 7.07975 0.422152 6.09499 1.13826 5.36316L1.9654 4.53687C2.12614 4.37618 2.34412 4.28591 2.5714 4.28591C2.79868 4.28591 3.01666 4.37618 3.1774 4.53687ZM7.89168 5.3203C8.04782 5.15864 8.13421 4.94213 8.13226 4.71739C8.13031 4.49265 8.04016 4.27767 7.88124 4.11874C7.72232 3.95982 7.50734 3.86968 7.2826 3.86772C7.05786 3.86577 6.84134 3.95217 6.67968 4.1083L4.10826 6.67973C3.95212 6.84139 3.86573 7.05791 3.86768 7.28265C3.86963 7.50739 3.95978 7.72237 4.1187 7.88129C4.27762 8.04021 4.4926 8.13036 4.71734 8.13231C4.94208 8.13426 5.1586 8.04787 5.32026 7.89173L7.89168 5.3203Z" fill="var(--titulo)" />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_329_11">
+                        <rect width="12" height="12" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </div>
+              </a>
               <p>UX e UI Design do Sistema de Certificados para o IFBA, campus Vitória da Conquista.</p>
             </div>
             <div class="habilidades">
@@ -118,18 +207,7 @@
           <div class="card_projeto">
             <span class="ano">2020</span>
             <div class="descricao">
-              <a href="https://mascatis.com/" target="_blank">Mascatis <div class="link">
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_329_11)">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.57511 2.35116L5.74883 3.17745C5.58717 3.33358 5.37065 3.41998 5.14591 3.41802C4.92117 3.41607 4.70619 3.32593 4.54727 3.167C4.38835 3.00808 4.2982 2.7931 4.29625 2.56836C4.2943 2.34362 4.38069 2.1271 4.53683 1.96545L5.36311 1.1383C6.09227 0.409147 7.08122 -0.000488292 8.1124 -0.000488281C9.14358 -0.00048827 10.1325 0.409147 10.8617 1.1383C11.5908 1.86746 12.0005 2.85641 12.0005 3.88759C12.0005 4.91877 11.5908 5.90772 10.8617 6.63687L10.0345 7.46316C9.95547 7.54503 9.86089 7.61033 9.75632 7.65525C9.65174 7.70017 9.53927 7.72381 9.42546 7.7248C9.31165 7.72579 9.19878 7.7041 9.09344 7.66101C8.9881 7.61791 8.8924 7.55426 8.81192 7.47378C8.73144 7.3933 8.66779 7.2976 8.62469 7.19226C8.5816 7.08692 8.55991 6.97406 8.5609 6.86024C8.56189 6.74643 8.58553 6.63396 8.63045 6.52938C8.67538 6.42481 8.74068 6.33023 8.82254 6.25116L9.64883 5.42402C10.0374 5.01273 10.2503 4.46613 10.2423 3.90037C10.2342 3.3346 10.0059 2.79427 9.60581 2.39418C9.20572 1.99408 8.66538 1.76576 8.09962 1.75773C7.53386 1.7497 6.98726 1.96259 6.57597 2.35116H6.57511ZM3.1774 4.53687C3.33809 4.69761 3.42836 4.91559 3.42836 5.14287C3.42836 5.37016 3.33809 5.58814 3.1774 5.74887L2.35111 6.57602C1.96254 6.98731 1.74965 7.53391 1.75768 8.09967C1.76572 8.66543 1.99404 9.20576 2.39413 9.60586C2.79422 10.006 3.33456 10.2343 3.90032 10.2423C4.46608 10.2503 5.01268 10.0374 5.42397 9.64887L6.25111 8.82259C6.41277 8.66645 6.62929 8.58006 6.85403 8.58201C7.07877 8.58396 7.29375 8.67411 7.45267 8.83303C7.61159 8.99195 7.70174 9.20693 7.70369 9.43167C7.70564 9.65641 7.61925 9.87293 7.46311 10.0346L6.63683 10.8609C5.90511 11.5771 4.92041 11.9758 3.89652 11.9703C2.87263 11.9649 1.89222 11.5558 1.16816 10.8318C0.444093 10.1079 0.0348314 9.12752 0.029233 8.10364C0.0236346 7.07975 0.422152 6.09499 1.13826 5.36316L1.9654 4.53687C2.12614 4.37618 2.34412 4.28591 2.5714 4.28591C2.79868 4.28591 3.01666 4.37618 3.1774 4.53687ZM7.89168 5.3203C8.04782 5.15864 8.13421 4.94213 8.13226 4.71739C8.13031 4.49265 8.04016 4.27767 7.88124 4.11874C7.72232 3.95982 7.50734 3.86968 7.2826 3.86772C7.05786 3.86577 6.84134 3.95217 6.67968 4.1083L4.10826 6.67973C3.95212 6.84139 3.86573 7.05791 3.86768 7.28265C3.86963 7.50739 3.95978 7.72237 4.1187 7.88129C4.27762 8.04021 4.4926 8.13036 4.71734 8.13231C4.94208 8.13426 5.1586 8.04787 5.32026 7.89173L7.89168 5.3203Z" fill="var(--titulo)" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_329_11">
-                        <rect width="12" height="12" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </div></a>
+              <h3>Mascatis</h3>
               <p>Site desenvolvido para a própria Mascatis.</p>
             </div>
             <div class="habilidades">
@@ -143,7 +221,7 @@
             </div>
           </div>
 
-          <div class="card_projeto">
+          <div class="card_projeto ultimo">
             <span class="ano">2020</span>
             <div class="descricao">
               <h3>Jhudys Petshop</h3>
@@ -160,50 +238,6 @@
             </div>
           </div>
 
-          <div class="card_projeto">
-            <span class="ano">2020</span>
-            <div class="descricao">
-              <a href="https://draclessyarocha.com.br/" target="_blank">Dra Clessya <div class="link">
-                  <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_329_11)">
-                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.57511 2.35116L5.74883 3.17745C5.58717 3.33358 5.37065 3.41998 5.14591 3.41802C4.92117 3.41607 4.70619 3.32593 4.54727 3.167C4.38835 3.00808 4.2982 2.7931 4.29625 2.56836C4.2943 2.34362 4.38069 2.1271 4.53683 1.96545L5.36311 1.1383C6.09227 0.409147 7.08122 -0.000488292 8.1124 -0.000488281C9.14358 -0.00048827 10.1325 0.409147 10.8617 1.1383C11.5908 1.86746 12.0005 2.85641 12.0005 3.88759C12.0005 4.91877 11.5908 5.90772 10.8617 6.63687L10.0345 7.46316C9.95547 7.54503 9.86089 7.61033 9.75632 7.65525C9.65174 7.70017 9.53927 7.72381 9.42546 7.7248C9.31165 7.72579 9.19878 7.7041 9.09344 7.66101C8.9881 7.61791 8.8924 7.55426 8.81192 7.47378C8.73144 7.3933 8.66779 7.2976 8.62469 7.19226C8.5816 7.08692 8.55991 6.97406 8.5609 6.86024C8.56189 6.74643 8.58553 6.63396 8.63045 6.52938C8.67538 6.42481 8.74068 6.33023 8.82254 6.25116L9.64883 5.42402C10.0374 5.01273 10.2503 4.46613 10.2423 3.90037C10.2342 3.3346 10.0059 2.79427 9.60581 2.39418C9.20572 1.99408 8.66538 1.76576 8.09962 1.75773C7.53386 1.7497 6.98726 1.96259 6.57597 2.35116H6.57511ZM3.1774 4.53687C3.33809 4.69761 3.42836 4.91559 3.42836 5.14287C3.42836 5.37016 3.33809 5.58814 3.1774 5.74887L2.35111 6.57602C1.96254 6.98731 1.74965 7.53391 1.75768 8.09967C1.76572 8.66543 1.99404 9.20576 2.39413 9.60586C2.79422 10.006 3.33456 10.2343 3.90032 10.2423C4.46608 10.2503 5.01268 10.0374 5.42397 9.64887L6.25111 8.82259C6.41277 8.66645 6.62929 8.58006 6.85403 8.58201C7.07877 8.58396 7.29375 8.67411 7.45267 8.83303C7.61159 8.99195 7.70174 9.20693 7.70369 9.43167C7.70564 9.65641 7.61925 9.87293 7.46311 10.0346L6.63683 10.8609C5.90511 11.5771 4.92041 11.9758 3.89652 11.9703C2.87263 11.9649 1.89222 11.5558 1.16816 10.8318C0.444093 10.1079 0.0348314 9.12752 0.029233 8.10364C0.0236346 7.07975 0.422152 6.09499 1.13826 5.36316L1.9654 4.53687C2.12614 4.37618 2.34412 4.28591 2.5714 4.28591C2.79868 4.28591 3.01666 4.37618 3.1774 4.53687ZM7.89168 5.3203C8.04782 5.15864 8.13421 4.94213 8.13226 4.71739C8.13031 4.49265 8.04016 4.27767 7.88124 4.11874C7.72232 3.95982 7.50734 3.86968 7.2826 3.86772C7.05786 3.86577 6.84134 3.95217 6.67968 4.1083L4.10826 6.67973C3.95212 6.84139 3.86573 7.05791 3.86768 7.28265C3.86963 7.50739 3.95978 7.72237 4.1187 7.88129C4.27762 8.04021 4.4926 8.13036 4.71734 8.13231C4.94208 8.13426 5.1586 8.04787 5.32026 7.89173L7.89168 5.3203Z" fill="var(--titulo)" />
-                    </g>
-                    <defs>
-                      <clipPath id="clip0_329_11">
-                        <rect width="12" height="12" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-                </div></a>
-              <p>Site desenvolvido para uma médica dermatologista durante estágio na Mascatis.</p>
-            </div>
-            <div class="habilidades">
-              <h3>Estágio</h3>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Git</li>
-                <li>VS Code</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="card_projeto">
-            <span class="ano">2020</span>
-            <div class="descricao">
-              <h3>Cicatrimed</h3>
-              <p>Site desenvolvido para um centro de tratamento de feridas durante estágio na Mascatis.</p>
-            </div>
-            <div class="habilidades">
-              <h3>Estágio</h3>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Git</li>
-                <li>VS Code</li>
-              </ul>
-            </div>
-          </div>
         </div>
       </section>
     </div>
@@ -218,17 +252,21 @@
           <span>74 horas</span>
           <h3>JavaScript Completo ES6</h3>
         </a>
+        <a href="/certificados/HTML e CSS para Iniciantes.pdf" target="_blank" class="card">
+          <span>46 horas</span>
+          <h3>HTML e CSS</h3>
+        </a>
         <a href="/certificados/Vue.js 2 Completo.pdf" target="_blank" class="card">
           <span>44 horas</span>
           <h3>Vue.js 2 Completo</h3>
         </a>
-        <a href="/certificados/Web Design Completo.pdf" target="_blank" class="card">
-          <span>44 horas</span>
-          <h3>Web Design Completo</h3>
-        </a>
         <a href="/certificados/React Completo.pdf" target="_blank" class="card">
           <span>36 horas</span>
           <h3>React Completo</h3>
+        </a>
+        <a href="/certificados/UI Design para Iniciantes.pdf" target="_blank" class="card">
+          <span>34 horas</span>
+          <h3>UI Design para Iniciantes</h3>
         </a>
         <a href="/certificados/UI Design Avançado.pdf" target="_blank" class="card">
           <span>30 horas</span>
@@ -259,69 +297,50 @@
           <span>12 horas</span>
           <h3>CSS com SASS</h3>
         </a>
-        <a href="/certificados/CSS Grid Layout.pdf" target="_blank" class="card">
-          <span>10 horas</span>
-          <h3>CSS Grid Layout</h3>
-        </a>
         <a href="/certificados/Bootstrap 4.pdf" target="_blank" class="card">
           <span>10 horas</span>
           <h3>Bootstrap 4</h3>
         </a>
-        <a href="/certificados/Automação Front-end com NPM.pdf" target="_blank" class="card">
+        <a href="/certificados/CSS Grid Layout.pdf" target="_blank" class="card">
+          <span>10 horas</span>
+          <h3>CSS Grid Layout</h3>
+        </a>
+        <a href="/certificados/Automação Front-end com NPM.pdf" target="_blank" class="card penultimo">
           <span>8 horas</span>
           <h3>Automação Front-end</h3>
         </a>
-        <a href="/certificados/CSS Flexbox.pdf" target="_blank" class="card penultimo">
+        <a href="/certificados/CSS Flexbox.pdf" target="_blank" class="card ultimo">
           <span>6 horas</span>
           <h3>CSS Flexbox</h3>
-        </a>
-        <a href="/certificados/Adobe XD.pdf" target="_blank" class="card ultimo">
-          <span>6 horas</span>
-          <h3>Adobe XD</h3>
         </a>
       </div>
     </div>
   </section>
 
-  <footer aria-label="Rodapé" id="contato">
+  <footer aria-label="Rodapé" id="contatos">
     <div class="container_contato">
       <div class="contatos">
-        <div class="logo_desk" alt="William Tôrres"><svg width="67" height="34" viewBox="0 0 67 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M66.0806 0L65.3126 6.048H57.1046V33.264H49.2326V6.048H40.6406V0H66.0806Z" fill="var(--logo)" />
-            <path d="M5.472 33.264H11.9058L11.184 27.312L7.87201 0H0L2.736 16.632L5.472 33.264Z" fill="#2424B3" />
-            <path d="M15.456 33.264L19.824 7.872L21.1782 0H15.792L11.184 27.312L11.9058 33.264H15.456Z" fill="#6DB0F2" />
-            <path d="M23.952 33.264H29.3094L28.368 27.312L24.048 0H21.1782L19.824 7.872L21.888 20.568L23.952 33.264Z" fill="#5CE6E6" />
-            <path d="M34.176 33.264L39.744 0H32.256L28.368 27.312L29.3094 33.264H34.176Z" fill="#5F19A6" />
+        <div class="logo_desk" alt="William Tôrres">
+          <svg width="70" height="35" viewBox="0 0 70 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M70 1.90735e-05L69.1864 6.36365H60.4916V35H52.1527V6.36365H43.0511V1.90735e-05H70Z" fill="var(--logo)" />
+            <path d="M5.79656 35H12.6119L11.8473 28.7374L8.33891 1.90735e-05H0L2.89828 17.5L5.79656 35Z" fill="#2424B3" />
+            <path d="M16.3727 35L20.9998 8.28285L22.4343 1.90735e-05H16.7287L11.8473 28.7374L12.6119 35H16.3727Z" fill="#6DB0F2" />
+            <path d="M25.3727 35H31.0478L30.0506 28.7374L25.4743 1.90735e-05H22.4343L20.9998 8.28285L23.1862 21.6414L25.3727 35Z" fill="#5CE6E6" />
+            <path d="M36.2031 35L42.1013 1.90735e-05H34.1692L30.0506 28.7374L31.0478 35H36.2031Z" fill="#5F19A6" />
           </svg>
         </div>
 
         <ul class="dados">
           <li><a href="mailto:williammacairatorres@gmail.com">williammacairatorres@gmail.com</a></li>
-          <li><a href="https://api.whatsapp.com/send?phone=5577991860006&text=Ol%C3%A1,%20William!" target="_blank">77 991860006</a></li>
-          <li><a href="https://www.instagram.com/williamtorres.dev?igsh=aGl5cG01aWh3Zm9h" target="_blank">@williamtorres.dev</a></li>
+          <li><a href="https://api.whatsapp.com/send?phone=5577998778686&text=Ol%C3%A1,%20William!" target="_blank">(77) 99877-8686</a></li>
         </ul>
 
         <ul class="redes_sociais">
           <li>
-            <a href="https://dribbble.com/wiliamtorres/about" target="_blank">
-              <div class="dribbble"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_1221_10)">
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.58859 1.88051C4.80906 2.30512 4.0939 2.83846 3.46459 3.46451C2.05716 4.87537 1.13659 6.71994 0.709732 8.91937C4.54116 9.25537 8.0983 8.64508 11.1206 7.58222C9.59087 5.39962 7.72351 3.47439 5.58859 1.8788V1.88051ZM0.452589 11.0468C0.435446 11.3588 0.428589 11.6777 0.428589 11.9999C0.428589 14.7239 1.01145 17.0657 2.18059 18.9205C5.76002 15.7028 9.32916 13.7845 12.9343 12.8057C13.2223 12.7268 13.512 12.6548 13.8017 12.5879C13.3903 11.5422 12.8932 10.4845 12.2932 9.43365C8.51603 10.8478 4.47036 11.399 0.452589 11.0468ZM3.52459 20.5937C5.54745 22.5805 8.44802 23.5714 12 23.5714C13.0885 23.5775 14.1747 23.4724 15.2417 23.2577C15.2417 23.2062 15.2469 23.1548 15.2537 23.1034C15.5709 20.9382 15.4509 17.9074 14.496 14.6279C14.1617 14.7017 13.8292 14.7822 13.4966 14.8731C10.2223 15.7645 6.91545 17.5234 3.52459 20.5937ZM17.4737 22.5719C18.6168 22.0982 19.6567 21.4065 20.5354 20.5354C22.0869 18.9822 23.0452 16.9011 23.4069 14.3982C21.108 14.0914 18.8537 14.0125 16.6234 14.2731C17.4926 17.3759 17.6863 20.2868 17.4737 22.5702V22.5719ZM23.5714 12.2571V11.9999C23.5714 8.67422 22.7023 5.92108 20.9623 3.92394C19.5154 5.5268 17.2046 7.24451 14.2869 8.60394C14.9537 9.80051 15.5023 11.0057 15.9463 12.1971C18.4937 11.8542 21.0326 11.9279 23.5697 12.2588L23.5714 12.2571ZM19.3766 2.48222C17.4532 1.11422 14.952 0.42851 12 0.42851C10.6069 0.414431 9.21844 0.592096 7.87373 0.95651C9.9092 2.62381 11.6898 4.57996 13.1589 6.7628C15.924 5.50794 18.0857 3.91708 19.3749 2.48394L19.3766 2.48222Z" fill="var(--link1)" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_1221_10">
-                      <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
-              </div>
-            </a>
-          </li>
-
-          <li>
             <a href="https://github.com/williamtorres-dev" target="_blank">
-              <div class="github"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11.9953 1.00001C9.38482 0.997811 6.85889 1.92523 4.87007 3.6161C2.88124 5.30697 1.5595 7.65078 1.14167 10.2276C0.723833 12.8044 1.23722 15.4457 2.58983 17.6784C3.94244 19.9111 6.04589 21.5892 8.52327 22.412C9.07127 22.507 9.24527 22.185 9.24527 21.895C9.24527 21.632 9.25127 20.904 9.24527 19.985C6.18827 20.647 5.55727 18.537 5.55727 18.537C5.3555 17.8729 4.92275 17.3028 4.33727 16.93C3.34027 16.248 4.41227 16.261 4.41227 16.261C4.76042 16.3089 5.09302 16.4357 5.3847 16.6317C5.67637 16.8277 5.91941 17.0878 6.09527 17.392C6.24408 17.663 6.44513 17.9019 6.68678 18.0947C6.92844 18.2876 7.20592 18.4306 7.50319 18.5156C7.80046 18.6006 8.11163 18.6258 8.41871 18.5899C8.72579 18.5539 9.0227 18.4574 9.29227 18.306C9.34271 17.7505 9.58989 17.2313 9.98927 16.842C7.55027 16.563 4.98527 15.622 4.98527 11.41C4.96977 10.3184 5.37514 9.26271 6.11727 8.46201C5.78103 7.5148 5.8193 6.47493 6.22427 5.55501C6.22427 5.55501 7.14827 5.26001 9.24427 6.68301C11.0453 6.189 12.9462 6.189 14.7473 6.68301C16.8493 5.26101 17.7653 5.55501 17.7653 5.55501C18.1703 6.47501 18.2093 7.51501 17.8743 8.46201C18.6166 9.26324 19.0213 10.3199 19.0043 11.412C19.0043 15.635 16.4353 16.562 13.9883 16.832C14.2514 17.0962 14.4546 17.4138 14.5844 17.7633C14.7141 18.1128 14.7673 18.4862 14.7403 18.858V21.899C14.7403 22.193 14.9173 22.518 15.4753 22.411C17.9526 21.5874 20.0556 19.9086 21.4076 17.6753C22.7596 15.4421 23.272 12.8003 22.8532 10.2235C22.4344 7.64674 21.1117 5.3033 19.122 3.61315C17.1324 1.923 14.6059 0.996621 11.9953 1.00001Z" fill="var(--link1)" />
+              <div class="github">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.9968 1.20965e-05C10.6738 -0.00285939 7.45828 1.20878 4.92653 3.41784C2.39479 5.6269 0.712233 8.68901 0.180339 12.0555C-0.351556 15.422 0.301973 18.8729 2.02383 21.7898C3.74568 24.7067 6.42334 26.8991 9.57701 27.9741C10.2746 28.0982 10.4961 27.6775 10.4961 27.2986C10.4961 26.955 10.5037 26.0039 10.4961 24.8033C6.60459 25.6681 5.80134 22.9115 5.80134 22.9115C5.54449 22.0438 4.9936 21.2991 4.2483 20.812C2.97913 19.921 4.34377 19.938 4.34377 19.938C4.78695 20.0005 5.21035 20.1662 5.58165 20.4223C5.95295 20.6784 6.26234 21.0181 6.48621 21.4156C6.67564 21.7697 6.93156 22.0817 7.23919 22.3337C7.54681 22.5856 7.90004 22.7725 8.27847 22.8836C8.65689 22.9946 9.053 23.0276 9.4439 22.9806C9.83481 22.9336 10.2128 22.8075 10.5559 22.6097C10.6201 21.884 10.9348 21.2057 11.4432 20.697C8.3384 20.3325 5.07319 19.1032 5.07319 13.6003C5.05346 12.1742 5.56949 10.7949 6.51421 9.74886C6.08618 8.51137 6.1349 7.15281 6.65042 5.95096C6.65042 5.95096 7.82666 5.56556 10.4948 7.42466C12.7876 6.77925 15.2073 6.77925 17.5001 7.42466C20.1759 5.56686 21.3419 5.95096 21.3419 5.95096C21.8575 7.15291 21.9071 8.51164 21.4807 9.74886C22.4257 10.7956 22.9409 12.1761 22.9192 13.6029C22.9192 19.1201 19.6489 20.3312 16.5339 20.684C16.8688 21.0291 17.1275 21.4441 17.2927 21.9007C17.4578 22.3573 17.5255 22.8451 17.4912 23.3309V27.3038C17.4912 27.6879 17.7165 28.1125 18.4268 27.9728C21.5804 26.8968 24.2575 24.7034 25.9786 21.7858C27.6996 18.8681 28.352 15.4167 27.8188 12.0502C27.2857 8.68374 25.6018 5.62211 23.0691 3.41399C20.5363 1.20587 17.3201 -0.00441392 13.9968 1.20965e-05Z" fill="var(--link1)" />
                 </svg>
               </div>
             </a>
@@ -329,8 +348,9 @@
 
           <li>
             <a href="https://www.linkedin.com/in/william-torres-bb967b2b4/" target="_blank">
-              <div class="linkedin"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 6C4.16304 6 4.79893 5.73661 5.26777 5.26777C5.73661 4.79893 6 4.16304 6 3.5C6 2.83696 5.73661 2.20107 5.26777 1.73223C4.79893 1.26339 4.16304 1 3.5 1C2.83696 1 2.20107 1.26339 1.73223 1.73223C1.26339 2.20107 1 2.83696 1 3.5C1 4.16304 1.26339 4.79893 1.73223 5.26777C2.20107 5.73661 2.83696 6 3.5 6ZM6 23V8H1V23H6ZM8 8H12.5V9.946C13.216 9.005 14.746 8 17.5 8C21.83 8 23 12.32 23 15V23H18V15C18 14 17.5 12 15.5 12C14.08 12 13.08 13.008 12.5 13.951V23H8V8Z" fill="var(--link1)" />
+              <div class="linkedin">
+                <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M3.18182 6.36364C4.02569 6.36364 4.835 6.02841 5.4317 5.4317C6.02841 4.835 6.36364 4.02569 6.36364 3.18182C6.36364 2.33795 6.02841 1.52864 5.4317 0.931933C4.835 0.335226 4.02569 0 3.18182 0C2.33795 0 1.52864 0.335226 0.931933 0.931933C0.335226 1.52864 0 2.33795 0 3.18182C0 4.02569 0.335226 4.835 0.931933 5.4317C1.52864 6.02841 2.33795 6.36364 3.18182 6.36364ZM6.36364 28V8.90909H0V28H6.36364ZM8.90909 8.90909H14.6364V11.3858C15.5476 10.1882 17.4949 8.90909 21 8.90909C26.5109 8.90909 28 14.4073 28 17.8182V28H21.6364V17.8182C21.6364 16.5455 21 14 18.4545 14C16.6473 14 15.3745 15.2829 14.6364 16.4831V28H8.90909V8.90909Z" fill="var(--link1)" />
                 </svg>
               </div>
             </a>
@@ -344,18 +364,20 @@
         © Copyright 2024. William Design. Alguns direitos reservados.
       </p>
 
-      <div class="logo_mobile" alt="William Tôrres"><svg width="67" height="34" viewBox="0 0 67 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M66.0806 0L65.3126 6.048H57.1046V33.264H49.2326V6.048H40.6406V0H66.0806Z" fill="var(--logo)" />
-          <path d="M5.472 33.264H11.9058L11.184 27.312L7.87201 0H0L2.736 16.632L5.472 33.264Z" fill="#2424B3" />
-          <path d="M15.456 33.264L19.824 7.872L21.1782 0H15.792L11.184 27.312L11.9058 33.264H15.456Z" fill="#6DB0F2" />
-          <path d="M23.952 33.264H29.3094L28.368 27.312L24.048 0H21.1782L19.824 7.872L21.888 20.568L23.952 33.264Z" fill="#5CE6E6" />
-          <path d="M34.176 33.264L39.744 0H32.256L28.368 27.312L29.3094 33.264H34.176Z" fill="#5F19A6" />
+      <div class="logo_mobile" alt="William Tôrres">
+        <svg width="70" height="35" viewBox="0 0 70 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M70 1.90735e-05L69.1864 6.36365H60.4916V35H52.1527V6.36365H43.0511V1.90735e-05H70Z" fill="var(--logo)" />
+          <path d="M5.79656 35H12.6119L11.8473 28.7374L8.33891 1.90735e-05H0L2.89828 17.5L5.79656 35Z" fill="#2424B3" />
+          <path d="M16.3727 35L20.9998 8.28285L22.4343 1.90735e-05H16.7287L11.8473 28.7374L12.6119 35H16.3727Z" fill="#6DB0F2" />
+          <path d="M25.3727 35H31.0478L30.0506 28.7374L25.4743 1.90735e-05H22.4343L20.9998 8.28285L23.1862 21.6414L25.3727 35Z" fill="#5CE6E6" />
+          <path d="M36.2031 35L42.1013 1.90735e-05H34.1692L30.0506 28.7374L31.0478 35H36.2031Z" fill="#5F19A6" />
         </svg>
       </div>
 
     </div>
   </footer>
-
+  <script src="./js/plugins/simple-anime.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

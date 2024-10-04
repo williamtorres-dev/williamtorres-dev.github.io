@@ -66,6 +66,16 @@
     --titulo: var(--base1);
     --titulospan: var(--secundaria);
   }
+  .expro {
+    background: url("/img/padrao-projetos-dark.svg"), var(--background2);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+  .cursos {
+    background: url("/img/padrao-certificados-dark.svg"), var(--background1);
+    background-position: top right;
+    background-repeat: no-repeat;
+  }
 }
 
 @media (prefers-color-scheme: light) {
@@ -102,6 +112,16 @@
     --texto: var(--base9);
     --titulo: var(--base11);
     --titulospan: var(--primaria);
+  }
+  .expro {
+    background: url("/img/padrao-projetos-light.svg"), var(--background2);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+  }
+  .cursos {
+    background: url("/img/padrao-certificados-light.svg"), var(--background1);
+    background-position: top right;
+    background-repeat: no-repeat;
   }
 }
 
