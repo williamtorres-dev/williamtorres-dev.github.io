@@ -229,12 +229,10 @@
   .experiencias_texto {
     min-width: 0ch;
   }
-  .experiencias_texto p {
-    font-size: 1.25rem;
-    line-height: 1.2;
-  }
+  .experiencias_texto p,
   .experiencias_texto a {
     font-size: 1.25rem;
+    line-height: 1.2;
   }
   .separador {
     display: none;
@@ -269,15 +267,13 @@
   .experiencias {
     gap: 20px;
   }
-  .experiencias_texto p {
+  .experiencias_texto p,
+  .experiencias_texto a {
     font-size: 1rem;
     line-height: 1.25;
   }
   .experiencias_texto p + p {
     padding-top: 1rem;
-  }
-  .experiencias_texto a {
-    font-size: 1rem;
   }
   .card_projeto {
     grid-template-columns: 1fr;

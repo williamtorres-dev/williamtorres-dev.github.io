@@ -1,3 +1,6 @@
 [submodule "bikcraft"]
 	path = bikcraft
 	url = https://github.com/williamtorres-dev/bikcraft.git
+[submodule "animais-fantasticos"]
+	path = animais-fantasticos
+	url = https://github.com/williamtorres-dev/animais-fantasticos
