@@ -142,12 +142,15 @@
 
 @media (max-width: 430px) {
   .container_cursos {
-    padding: 80px 40px;
+    padding: 80px 40px 70px 30px;
   }
   .container_cursos h2 {
     font-size: 1.5rem;
+    padding-left: 10px;
   }
   .cards {
+    padding-left: 10px;
+    padding-bottom: 10px;
     gap: 20px;
     overflow-x: auto;
   }
