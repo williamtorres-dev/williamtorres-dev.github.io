@@ -280,7 +280,7 @@
   }
   .card_projeto:hover,
   .card_projeto:focus {
-    transform: translateX(-20px);
+    transform: scale(1.05);
   }
   .descricao {
     padding-bottom: 10px;
